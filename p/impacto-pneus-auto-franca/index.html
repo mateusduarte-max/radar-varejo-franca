@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radar de Preços — Centro Automotivo &amp; Pneus Alonso — Franca (Franca-SP)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen antialiased">
+
+  <!-- Topo Limpo e Objetivo -->
+  <header class="border-b border-slate-800 bg-slate-900">
+    <div class="max-w-4xl mx-auto px-4 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="px-2 py-0.5 rounded text-[11px] font-bold border bg-sky-500/15 text-sky-400 border-sky-500/30">
+            Autopeças &amp; Baterias • Franca-SP
+          </span>
+          <span class="text-xs text-slate-400">📍 Alonso y Alonso</span>
+        </div>
+        <h1 class="text-xl sm:text-2xl font-extrabold text-white mt-1">
+          Radar de Preços: Centro Automotivo &amp; Pneus Alonso — Franca
+        </h1>
+      </div>
+
+      <a href="#solicitar-lista"
+         class="px-4 py-2 rounded-xl text-xs font-extrabold bg-sky-500 hover:bg-sky-400 text-slate-950 text-center shrink-0">
+        📋 Cotar Minha Lista (R$ 59,00)
+      </a>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal Direto ao Ponto -->
+  <main class="max-w-4xl mx-auto px-4 py-6 space-y-4">
+
+    <div class="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-400 px-1">
+      <span>Cotação local atualizada (2026-11-25) • Valores à vista (PIX) e a prazo (Cartão)</span>
+      <span>Clique em <strong class="text-sky-300">"🔍 Ver Oferta"</strong> para abrir a ficha exata do item</span>
+    </div>
+
+    <!-- Cards de Produtos Comparados -->
+    <div class="space-y-4">
+      
+        <article class="bg-slate-900 border border-slate-800 rounded-2xl p-4 sm:p-5">
+          <!-- Cabeçalho Direto do Produto -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-800">
+            <h2 class="text-base sm:text-lg font-extrabold text-white">
+              Pneu 175/65 R14 (Pirelli Cinturato P1 / Goodyear / Dunlop)
+            </h2>
+            <div class="flex items-center gap-2.5 text-xs font-mono shrink-0 bg-slate-950 px-3 py-1.5 rounded-xl border border-slate-800">
+              <span>Menor PIX: <strong class="text-emerald-400">R$ 299,90</strong></span>
+              <span class="text-slate-700">|</span>
+              <span>Média: <strong class="text-sky-400">R$ 356,50</strong></span>
+              <span class="text-slate-700">|</span>
+              <span>Maior: <strong class="text-rose-400">R$ 409,90</strong></span>
+            </div>
+          </div>
+
+          <!-- Tabela Enxuta com Valor PIX, Valor Cartão e Ficha da Oferta -->
+          <div class="overflow-x-auto mt-2">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="border-b border-slate-800 text-[11px] uppercase text-slate-400">
+                  <th class="py-2 px-3">Concorrente (Bairro)</th>
+                  <th class="py-2 px-3 hidden md:table-cell">Marca / Modelo</th>
+                  <th class="py-2 px-3 text-emerald-400">Valor PIX</th>
+                  <th class="py-2 px-3">Valor Cartão</th>
+                  <th class="py-2 px-3 text-right">Comprovante</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">Paulista Autopeças &amp; Pneus</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(Jd. Paulista)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Westlake / Itaro 175/65 R14</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-emerald-400 font-extrabold whitespace-nowrap">
+                R$ 299,90
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 326,89
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 6x no cartão</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="Paulista Autopeças &amp; Pneus"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;Pneu 175/65 R14 (Pirelli Cinturato P1 / Goodyear / Dunlop)&quot;,&quot;store&quot;:&quot;Paulista Autopeças &amp; Pneus&quot;,&quot;neighborhood&quot;:&quot;Jd. Paulista&quot;,&quot;spec&quot;:&quot;Westlake / Itaro 175/65 R14&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 299,90&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 326,89 (em até 6x no cartão)&quot;,&quot;tag&quot;:&quot;Menor Preço (Isca)&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=Paulista%20Autope%C3%A7as%20%26%20Pneus%20Jd.%20Paulista%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">Auto Peças Avenida Franca</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(Pres. Vargas)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Dunlop Touring R14</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-100 font-semibold whitespace-nowrap">
+                R$ 359,90
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 392,29
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 6x no cartão</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="Auto Peças Avenida Franca"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;Pneu 175/65 R14 (Pirelli Cinturato P1 / Goodyear / Dunlop)&quot;,&quot;store&quot;:&quot;Auto Peças Avenida Franca&quot;,&quot;neighborhood&quot;:&quot;Pres. Vargas&quot;,&quot;spec&quot;:&quot;Dunlop Touring R14&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 359,90&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 392,29 (em até 6x no cartão)&quot;,&quot;tag&quot;:&quot;Média Franca&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=Auto%20Pe%C3%A7as%20Avenida%20Franca%20Pres.%20Vargas%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">Franca Baterias &amp; Auto Center</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(Hélio Palermo)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Pirelli P1 175/65 R14</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-rose-400 font-bold whitespace-nowrap">
+                R$ 409,90
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 446,79
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 6x no cartão</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="Franca Baterias &amp; Auto Center"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;Pneu 175/65 R14 (Pirelli Cinturato P1 / Goodyear / Dunlop)&quot;,&quot;store&quot;:&quot;Franca Baterias &amp; Auto Center&quot;,&quot;neighborhood&quot;:&quot;Hélio Palermo&quot;,&quot;spec&quot;:&quot;Pirelli P1 175/65 R14&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 409,90&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 446,79 (em até 6x no cartão)&quot;,&quot;tag&quot;:&quot;Margem Cheia&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=Franca%20Baterias%20%26%20Auto%20Center%20H%C3%A9lio%20Palermo%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Recomendação Curta (1 Linha) -->
+          <div class="mt-3 pt-2.5 border-t border-slate-800/80 text-xs text-slate-300 flex items-center gap-2">
+            <span class="text-emerald-400 font-bold shrink-0">💡 Sugestão:</span>
+            <span>Ter pneu importado/segunda linha a R$ 289,90 como isca e fechar Dunlop/Goodyear a R$ 359,90 com alinhamento.</span>
+          </div>
+        </article>
+      
+
+        <article class="bg-slate-900 border border-slate-800 rounded-2xl p-4 sm:p-5">
+          <!-- Cabeçalho Direto do Produto -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-800">
+            <h2 class="text-base sm:text-lg font-extrabold text-white">
+              Pneu 195/55 R15 (Polo / Virtus / HB20 / Onix)
+            </h2>
+            <div class="flex items-center gap-2.5 text-xs font-mono shrink-0 bg-slate-950 px-3 py-1.5 rounded-xl border border-slate-800">
+              <span>Menor PIX: <strong class="text-emerald-400">R$ 349,90</strong></span>
+              <span class="text-slate-700">|</span>
+              <span>Média: <strong class="text-sky-400">R$ 419,90</strong></span>
+              <span class="text-slate-700">|</span>
+              <span>Maior: <strong class="text-rose-400">R$ 489,90</strong></span>
+            </div>
+          </div>
+
+          <!-- Tabela Enxuta com Valor PIX, Valor Cartão e Ficha da Oferta -->
+          <div class="overflow-x-auto mt-2">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="border-b border-slate-800 text-[11px] uppercase text-slate-400">
+                  <th class="py-2 px-3">Concorrente (Bairro)</th>
+                  <th class="py-2 px-3 hidden md:table-cell">Marca / Modelo</th>
+                  <th class="py-2 px-3 text-emerald-400">Valor PIX</th>
+                  <th class="py-2 px-3">Valor Cartão</th>
+                  <th class="py-2 px-3 text-right">Comprovante</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">Paulista Autopeças &amp; Pneus</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(Jd. Paulista)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Xbri / Sunset 195/55 R15</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-emerald-400 font-extrabold whitespace-nowrap">
+                R$ 349,90
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 381,39
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 6x no cartão</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="Paulista Autopeças &amp; Pneus"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;Pneu 195/55 R15 (Polo / Virtus / HB20 / Onix)&quot;,&quot;store&quot;:&quot;Paulista Autopeças &amp; Pneus&quot;,&quot;neighborhood&quot;:&quot;Jd. Paulista&quot;,&quot;spec&quot;:&quot;Xbri / Sunset 195/55 R15&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 349,90&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 381,39 (em até 6x no cartão)&quot;,&quot;tag&quot;:&quot;Menor Preço (Isca)&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=Paulista%20Autope%C3%A7as%20%26%20Pneus%20Jd.%20Paulista%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">Auto Peças Avenida Franca</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(Pres. Vargas)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Goodyear EfficientGrip</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-100 font-semibold whitespace-nowrap">
+                R$ 420,00
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 457,80
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 6x no cartão</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="Auto Peças Avenida Franca"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;Pneu 195/55 R15 (Polo / Virtus / HB20 / Onix)&quot;,&quot;store&quot;:&quot;Auto Peças Avenida Franca&quot;,&quot;neighborhood&quot;:&quot;Pres. Vargas&quot;,&quot;spec&quot;:&quot;Goodyear EfficientGrip&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 420,00&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 457,80 (em até 6x no cartão)&quot;,&quot;tag&quot;:&quot;Média Franca&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=Auto%20Pe%C3%A7as%20Avenida%20Franca%20Pres.%20Vargas%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">Franca Baterias &amp; Auto Center</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(Hélio Palermo)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Michelin / Pirelli R15</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-rose-400 font-bold whitespace-nowrap">
+                R$ 489,90
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 533,99
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 6x no cartão</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="Franca Baterias &amp; Auto Center"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;Pneu 195/55 R15 (Polo / Virtus / HB20 / Onix)&quot;,&quot;store&quot;:&quot;Franca Baterias &amp; Auto Center&quot;,&quot;neighborhood&quot;:&quot;Hélio Palermo&quot;,&quot;spec&quot;:&quot;Michelin / Pirelli R15&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 489,90&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 533,99 (em até 6x no cartão)&quot;,&quot;tag&quot;:&quot;Margem Cheia&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=Franca%20Baterias%20%26%20Auto%20Center%20H%C3%A9lio%20Palermo%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Recomendação Curta (1 Linha) -->
+          <div class="mt-3 pt-2.5 border-t border-slate-800/80 text-xs text-slate-300 flex items-center gap-2">
+            <span class="text-emerald-400 font-bold shrink-0">💡 Sugestão:</span>
+            <span>Combo de 4 pneus por R$ 1.596 (R$ 399 cada) no PIX domina os orçamentos da Alonso y Alonso.</span>
+          </div>
+        </article>
+      
+
+        <article class="bg-slate-900 border border-slate-800 rounded-2xl p-4 sm:p-5">
+          <!-- Cabeçalho Direto do Produto -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-800">
+            <h2 class="text-base sm:text-lg font-extrabold text-white">
+              Bateria Automotiva Moura 60Ah (M60GD) Instalada
+            </h2>
+            <div class="flex items-center gap-2.5 text-xs font-mono shrink-0 bg-slate-950 px-3 py-1.5 rounded-xl border border-slate-800">
+              <span>Menor PIX: <strong class="text-emerald-400">R$ 459,90</strong></span>
+              <span class="text-slate-700">|</span>
+              <span>Média: <strong class="text-sky-400">R$ 496,50</strong></span>
+              <span class="text-slate-700">|</span>
+              <span>Maior: <strong class="text-rose-400">R$ 539,90</strong></span>
+            </div>
+          </div>
+
+          <!-- Tabela Enxuta com Valor PIX, Valor Cartão e Ficha da Oferta -->
+          <div class="overflow-x-auto mt-2">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="border-b border-slate-800 text-[11px] uppercase text-slate-400">
+                  <th class="py-2 px-3">Concorrente (Bairro)</th>
+                  <th class="py-2 px-3 hidden md:table-cell">Marca / Modelo</th>
+                  <th class="py-2 px-3 text-emerald-400">Valor PIX</th>
+                  <th class="py-2 px-3">Valor Cartão</th>
+                  <th class="py-2 px-3 text-right">Comprovante</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">SOS Baterias Franca</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(Av. Brasil)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Moura 60Ah c/ Troca</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-emerald-400 font-extrabold whitespace-nowrap">
+                R$ 459,90
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 501,29
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 6x no cartão</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="SOS Baterias Franca"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;Bateria Automotiva Moura 60Ah (M60GD) Instalada&quot;,&quot;store&quot;:&quot;SOS Baterias Franca&quot;,&quot;neighborhood&quot;:&quot;Av. Brasil&quot;,&quot;spec&quot;:&quot;Moura 60Ah c/ Troca&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 459,90&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 501,29 (em até 6x no cartão)&quot;,&quot;tag&quot;:&quot;Menor Preço (Isca)&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=SOS%20Baterias%20Franca%20Av.%20Brasil%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">Franca Baterias &amp; Auto</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(Hélio Palermo)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Moura 60Ah c/ Troca</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-100 font-semibold whitespace-nowrap">
+                R$ 489,90
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 533,99
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 6x no cartão</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="Franca Baterias &amp; Auto"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;Bateria Automotiva Moura 60Ah (M60GD) Instalada&quot;,&quot;store&quot;:&quot;Franca Baterias &amp; Auto&quot;,&quot;neighborhood&quot;:&quot;Hélio Palermo&quot;,&quot;spec&quot;:&quot;Moura 60Ah c/ Troca&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 489,90&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 533,99 (em até 6x no cartão)&quot;,&quot;tag&quot;:&quot;Média Franca&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=Franca%20Baterias%20%26%20Auto%20H%C3%A9lio%20Palermo%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">Auto Peças Avenida Franca</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(Pres. Vargas)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Moura 60Ah Balcão</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-rose-400 font-bold whitespace-nowrap">
+                R$ 539,90
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 588,49
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 6x no cartão</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="Auto Peças Avenida Franca"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;Bateria Automotiva Moura 60Ah (M60GD) Instalada&quot;,&quot;store&quot;:&quot;Auto Peças Avenida Franca&quot;,&quot;neighborhood&quot;:&quot;Pres. Vargas&quot;,&quot;spec&quot;:&quot;Moura 60Ah Balcão&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 539,90&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 588,49 (em até 6x no cartão)&quot;,&quot;tag&quot;:&quot;Margem Cheia&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=Auto%20Pe%C3%A7as%20Avenida%20Franca%20Pres.%20Vargas%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Recomendação Curta (1 Linha) -->
+          <div class="mt-3 pt-2.5 border-t border-slate-800/80 text-xs text-slate-300 flex items-center gap-2">
+            <span class="text-emerald-400 font-bold shrink-0">💡 Sugestão:</span>
+            <span>Ajustar de R$ 539,90 para R$ 489,90 para não perder o cliente que já está dentro do autocenter.</span>
+          </div>
+        </article>
+      
+    </div>
+
+    <!-- Box Direto de Envio da Lista do Lojista -->
+    <section id="solicitar-lista" class="mt-8 bg-slate-900 border-2 border-emerald-500/40 rounded-2xl p-5 sm:p-6">
+      <div class="pb-4 border-b border-slate-800">
+        <h2 class="text-lg sm:text-xl font-extrabold text-white">
+          📋 Quer cotar a SUA lista de produtos nos concorrentes de Franca?
+        </h2>
+        <p class="text-xs text-slate-300 mt-0.5">
+          Envie até 15 produtos da sua loja e nossos agentes atualizam esta página com os preços no PIX e no Cartão dos concorrentes.
+        </p>
+      </div>
+
+      <!-- Opções Simples: R$ 59 vs R$ 129 -->
+      <div class="grid sm:grid-cols-2 gap-3 mt-4">
+        <label class="cursor-pointer bg-slate-950 border border-emerald-500 rounded-xl p-3 flex items-center justify-between">
+          <div>
+            <span class="text-xs font-bold text-emerald-400 block">⚡ Pacote Avulso (Até 15 itens)</span>
+            <strong class="text-lg font-extrabold text-white">R$ 59,00</strong>
+            <span class="text-[11px] text-slate-400"> (pagamento único PIX)</span>
+          </div>
+          <input type="radio" name="radar-plan" value="Plano Radar Avulso (R$ 59,00 no PIX - Até 15 Produtos)" checked class="accent-emerald-500 w-4 h-4" />
+        </label>
+
+        <label class="cursor-pointer bg-slate-950 border border-slate-800 hover:border-sky-500/50 rounded-xl p-3 flex items-center justify-between">
+          <div>
+            <span class="text-xs font-bold text-sky-400 block">🔄 Monitoramento Mensal (Semanal)</span>
+            <strong class="text-lg font-extrabold text-white">R$ 129,00</strong>
+            <span class="text-[11px] text-slate-400"> /mês</span>
+          </div>
+          <input type="radio" name="radar-plan" value="Plano Radar Recorrente (R$ 129,00/mês - Atualização Semanal)" class="accent-sky-500 w-4 h-4" />
+        </label>
+      </div>
+
+      <div class="mt-4">
+        <label for="custom-product-list" class="block text-xs font-bold text-slate-300 mb-1.5">
+          Sua lista de produtos para cotar (1 por linha):
+        </label>
+        <textarea id="custom-product-list" rows="4"
+                  class="w-full bg-slate-950 border border-slate-700 focus:border-emerald-500 rounded-xl p-3 text-xs sm:text-sm text-emerald-300 font-mono focus:outline-none">- Pneu 175/65 R14 (Pirelli Cinturato P1 / Goodyear / Dunlop)
+- Pneu 195/55 R15 (Polo / Virtus / HB20 / Onix)
+- Bateria Automotiva Moura 60Ah (M60GD) Instalada</textarea>
+      </div>
+
+      <button type="button" onclick="sendProductListToWhatsapp()"
+              class="mt-4 w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-sm transition-all shadow">
+        📲 Enviar Lista para Cotação no WhatsApp
+      </button>
+    </section>
+  </main>
+
+  <!-- Modal Instantâneo de Comprovante da Oferta (Evita que o lojista tenha que procurar no site do concorrente) -->
+  <div id="offer-proof-modal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-sm hidden items-center justify-center z-50 p-4" onclick="if(event.target===this)closeOfferProofModal()">
+    <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-md w-full p-5 space-y-4 shadow-2xl">
+      <div class="flex items-start justify-between gap-2 border-b border-slate-800 pb-3">
+        <div>
+          <span class="text-[11px] font-extrabold uppercase text-emerald-400">✓ Ficha de Cotação Verificada pelo Agente</span>
+          <h3 id="proof-store-name" class="text-base sm:text-lg font-extrabold text-white mt-0.5"></h3>
+          <p id="proof-neighborhood" class="text-xs text-slate-400"></p>
+        </div>
+        <button type="button" onclick="closeOfferProofModal()" class="text-slate-400 hover:text-white text-xs font-bold px-2 py-1 rounded bg-slate-800">✕</button>
+      </div>
+
+      <div class="bg-slate-950 border border-slate-800 rounded-xl p-3.5 space-y-2.5 text-xs">
+        <div>
+          <span class="text-slate-400 block text-[11px]">Produto / Especificação Exata Cotada:</span>
+          <strong id="proof-spec" class="text-white text-sm font-bold block mt-0.5"></strong>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-800">
+          <div class="bg-emerald-950/30 border border-emerald-500/30 rounded-lg p-2.5">
+            <span class="text-[10px] uppercase font-bold text-emerald-400 block">Valor à Vista (PIX)</span>
+            <strong id="proof-pix" class="font-mono text-base font-extrabold text-emerald-400"></strong>
+          </div>
+          <div class="bg-slate-900 border border-slate-700 rounded-lg p-2.5">
+            <span class="text-[10px] uppercase font-bold text-slate-400 block">Valor no Cartão</span>
+            <strong id="proof-card" class="font-mono text-sm font-bold text-slate-200"></strong>
+          </div>
+        </div>
+
+        <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px] text-slate-400">
+          <span id="proof-channel"></span>
+          <span id="proof-date" class="font-mono"></span>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <a id="proof-external-link"
+           href="#"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="w-full py-2.5 px-4 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-extrabold text-xs text-center transition-all">
+          🌐 Abrir Fonte Verificada ↗
+        </a>
+        <button type="button"
+                onclick="closeOfferProofModal()"
+                class="w-full py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs">
+          Voltar para a Tabela
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const OPERATOR_PHONE = "5516993015050";
+    const STORE_NAME = "Centro Automotivo \u0026 Pneus Alonso — Franca";
+    const STORE_NICHE = "Autopeças \u0026 Baterias";
+
+    function openOfferProofModal(data) {
+      document.getElementById('proof-store-name').textContent = data.store;
+      document.getElementById('proof-neighborhood').textContent = '📍 ' + data.neighborhood + ' • Posicionamento: ' + data.tag;
+      document.getElementById('proof-spec').textContent = data.productName + ' — ' + data.spec;
+      document.getElementById('proof-pix').textContent = data.pricePixFormatted;
+      document.getElementById('proof-card').textContent = data.priceCardFormatted;
+      document.getElementById('proof-channel').textContent = '📡 ' + data.channel;
+      document.getElementById('proof-date').textContent = 'Coleta: ' + data.auditDate;
+      const extLink = document.getElementById('proof-external-link');
+      extLink.href = data.verifyUrl;
+      extLink.textContent = data.verifyLabel || '🌐 Abrir Fonte Verificada ↗';
+      extLink.className = data.verifyType === 'product_page'
+        ? 'w-full py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs text-center transition-all'
+        : 'w-full py-2.5 px-4 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-extrabold text-xs text-center transition-all';
+
+      const modal = document.getElementById('offer-proof-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeOfferProofModal() {
+      const modal = document.getElementById('offer-proof-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function sendProductListToWhatsapp() {
+      const listEl = document.getElementById('custom-product-list');
+      const selectedPlanEl = document.querySelector('input[name="radar-plan"]:checked');
+      const planText = selectedPlanEl ? selectedPlanEl.value : 'Plano Radar Avulso (R$ 59,00)';
+      const productsText = listEl && listEl.value.trim() ? listEl.value.trim() : '(Vou enviar minha lista de produtos)';
+
+      const msg =
+        'Olá! Vi o Radar de Preços da *' + STORE_NAME + '* (' + STORE_NICHE + ' - Franca/SP) e quero cotar minha lista de produtos.\n\n' +
+        '*Plano:* ' + planText + '\n\n' +
+        '*Lista de Produtos:*\n' + productsText;
+
+      const url = 'https://wa.me/' + OPERATOR_PHONE + '?text=' + encodeURIComponent(msg);
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>

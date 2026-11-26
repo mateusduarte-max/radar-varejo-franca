@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radar de Preços — Franca Suplementos &amp; Nutrição Esportiva (Franca-SP)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen antialiased">
+
+  <!-- Topo Limpo e Objetivo -->
+  <header class="border-b border-slate-800 bg-slate-900">
+    <div class="max-w-4xl mx-auto px-4 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="px-2 py-0.5 rounded text-[11px] font-bold border bg-rose-500/15 text-rose-400 border-rose-500/30">
+            Suplementos &amp; Cosméticos • Franca-SP
+          </span>
+          <span class="text-xs text-slate-400">📍 Presidente Vargas / Cidade Nova</span>
+        </div>
+        <h1 class="text-xl sm:text-2xl font-extrabold text-white mt-1">
+          Radar de Preços: Franca Suplementos &amp; Nutrição Esportiva
+        </h1>
+      </div>
+
+      <a href="#solicitar-lista"
+         class="px-4 py-2 rounded-xl text-xs font-extrabold bg-rose-500 hover:bg-rose-400 text-white text-center shrink-0">
+        📋 Cotar Minha Lista (R$ 59,00)
+      </a>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal Direto ao Ponto -->
+  <main class="max-w-4xl mx-auto px-4 py-6 space-y-4">
+
+    <div class="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-400 px-1">
+      <span>Cotação local atualizada (2026-11-25) • Valores à vista (PIX) e a prazo (Cartão)</span>
+      <span>Clique em <strong class="text-sky-300">"🔍 Ver Oferta"</strong> para abrir a ficha exata do item</span>
+    </div>
+
+    <!-- Cards de Produtos Comparados -->
+    <div class="space-y-4">
+      
+        <article class="bg-slate-900 border border-slate-800 rounded-2xl p-4 sm:p-5">
+          <!-- Cabeçalho Direto do Produto -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-800">
+            <h2 class="text-base sm:text-lg font-extrabold text-white">
+              Creatina Monohidratada 100% Pura 300g (Max Titanium / Integralmédica)
+            </h2>
+            <div class="flex items-center gap-2.5 text-xs font-mono shrink-0 bg-slate-950 px-3 py-1.5 rounded-xl border border-slate-800">
+              <span>Menor PIX: <strong class="text-emerald-400">R$ 69,90</strong></span>
+              <span class="text-slate-700">|</span>
+              <span>Média: <strong class="text-sky-400">R$ 86,50</strong></span>
+              <span class="text-slate-700">|</span>
+              <span>Maior: <strong class="text-rose-400">R$ 104,90</strong></span>
+            </div>
+          </div>
+
+          <!-- Tabela Enxuta com Valor PIX, Valor Cartão e Ficha da Oferta -->
+          <div class="overflow-x-auto mt-2">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="border-b border-slate-800 text-[11px] uppercase text-slate-400">
+                  <th class="py-2 px-3">Concorrente (Bairro)</th>
+                  <th class="py-2 px-3 hidden md:table-cell">Marca / Modelo</th>
+                  <th class="py-2 px-3 text-emerald-400">Valor PIX</th>
+                  <th class="py-2 px-3">Valor Cartão</th>
+                  <th class="py-2 px-3 text-right">Comprovante</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">Monster Suplementos Franca</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(Centro)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Integralmédica 300g</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-emerald-400 font-extrabold whitespace-nowrap">
+                R$ 69,90
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 76,19
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 3x sem juros</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="Monster Suplementos Franca"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;Creatina Monohidratada 100% Pura 300g (Max Titanium / Integralmédica)&quot;,&quot;store&quot;:&quot;Monster Suplementos Franca&quot;,&quot;neighborhood&quot;:&quot;Centro&quot;,&quot;spec&quot;:&quot;Integralmédica 300g&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 69,90&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 76,19 (em até 3x sem juros)&quot;,&quot;tag&quot;:&quot;Menor Preço (Isca)&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=Monster%20Suplementos%20Franca%20Centro%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">Bio Corpo Suplementos</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(Alonso y Alonso)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Max Titanium 300g</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-100 font-semibold whitespace-nowrap">
+                R$ 84,90
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 92,54
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 3x sem juros</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="Bio Corpo Suplementos"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;Creatina Monohidratada 100% Pura 300g (Max Titanium / Integralmédica)&quot;,&quot;store&quot;:&quot;Bio Corpo Suplementos&quot;,&quot;neighborhood&quot;:&quot;Alonso y Alonso&quot;,&quot;spec&quot;:&quot;Max Titanium 300g&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 84,90&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 92,54 (em até 3x sem juros)&quot;,&quot;tag&quot;:&quot;Média Franca&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=Bio%20Corpo%20Suplementos%20Alonso%20y%20Alonso%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">Mundo Verde / Empório Fit</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(Shopping / São José)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Pura / Creapure 300g</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-rose-400 font-bold whitespace-nowrap">
+                R$ 104,90
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 114,34
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 3x sem juros</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="Mundo Verde / Empório Fit"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;Creatina Monohidratada 100% Pura 300g (Max Titanium / Integralmédica)&quot;,&quot;store&quot;:&quot;Mundo Verde / Empório Fit&quot;,&quot;neighborhood&quot;:&quot;Shopping / São José&quot;,&quot;spec&quot;:&quot;Pura / Creapure 300g&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 104,90&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 114,34 (em até 3x sem juros)&quot;,&quot;tag&quot;:&quot;Margem Cheia&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=Mundo%20Verde%20%2F%20Emp%C3%B3rio%20Fit%20Shopping%20%2F%20S%C3%A3o%20Jos%C3%A9%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Recomendação Curta (1 Linha) -->
+          <div class="mt-3 pt-2.5 border-t border-slate-800/80 text-xs text-slate-300 flex items-center gap-2">
+            <span class="text-emerald-400 font-bold shrink-0">💡 Sugestão:</span>
+            <span>Usar a Creatina 300g a R$ 74,90 no PIX como isca de tráfego e ofertar Combo Whey + Creatina por R$ 189,90.</span>
+          </div>
+        </article>
+      
+
+        <article class="bg-slate-900 border border-slate-800 rounded-2xl p-4 sm:p-5">
+          <!-- Cabeçalho Direto do Produto -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-800">
+            <h2 class="text-base sm:text-lg font-extrabold text-white">
+              100% Whey Protein Concentrado 900g Pote (Max Titanium / Probiótica)
+            </h2>
+            <div class="flex items-center gap-2.5 text-xs font-mono shrink-0 bg-slate-950 px-3 py-1.5 rounded-xl border border-slate-800">
+              <span>Menor PIX: <strong class="text-emerald-400">R$ 119,90</strong></span>
+              <span class="text-slate-700">|</span>
+              <span>Média: <strong class="text-sky-400">R$ 136,50</strong></span>
+              <span class="text-slate-700">|</span>
+              <span>Maior: <strong class="text-rose-400">R$ 154,90</strong></span>
+            </div>
+          </div>
+
+          <!-- Tabela Enxuta com Valor PIX, Valor Cartão e Ficha da Oferta -->
+          <div class="overflow-x-auto mt-2">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="border-b border-slate-800 text-[11px] uppercase text-slate-400">
+                  <th class="py-2 px-3">Concorrente (Bairro)</th>
+                  <th class="py-2 px-3 hidden md:table-cell">Marca / Modelo</th>
+                  <th class="py-2 px-3 text-emerald-400">Valor PIX</th>
+                  <th class="py-2 px-3">Valor Cartão</th>
+                  <th class="py-2 px-3 text-right">Comprovante</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">Monster Suplementos Franca</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(Centro)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Max Titanium 900g Refil/Pote</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-emerald-400 font-extrabold whitespace-nowrap">
+                R$ 119,90
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 130,69
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 3x sem juros</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="Monster Suplementos Franca"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;100% Whey Protein Concentrado 900g Pote (Max Titanium / Probiótica)&quot;,&quot;store&quot;:&quot;Monster Suplementos Franca&quot;,&quot;neighborhood&quot;:&quot;Centro&quot;,&quot;spec&quot;:&quot;Max Titanium 900g Refil/Pote&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 119,90&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 130,69 (em até 3x sem juros)&quot;,&quot;tag&quot;:&quot;Menor Preço (Isca)&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=Monster%20Suplementos%20Franca%20Centro%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">Bio Corpo Suplementos</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(Alonso y Alonso)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Max Titanium Pote 900g</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-100 font-semibold whitespace-nowrap">
+                R$ 134,90
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 147,04
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 3x sem juros</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="Bio Corpo Suplementos"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;100% Whey Protein Concentrado 900g Pote (Max Titanium / Probiótica)&quot;,&quot;store&quot;:&quot;Bio Corpo Suplementos&quot;,&quot;neighborhood&quot;:&quot;Alonso y Alonso&quot;,&quot;spec&quot;:&quot;Max Titanium Pote 900g&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 134,90&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 147,04 (em até 3x sem juros)&quot;,&quot;tag&quot;:&quot;Média Franca&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=Bio%20Corpo%20Suplementos%20Alonso%20y%20Alonso%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">Belíssima &amp; Fit Franca</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(Estação)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Integralmédica 900g</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-rose-400 font-bold whitespace-nowrap">
+                R$ 154,90
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 168,84
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 3x sem juros</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="Belíssima &amp; Fit Franca"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;100% Whey Protein Concentrado 900g Pote (Max Titanium / Probiótica)&quot;,&quot;store&quot;:&quot;Belíssima &amp; Fit Franca&quot;,&quot;neighborhood&quot;:&quot;Estação&quot;,&quot;spec&quot;:&quot;Integralmédica 900g&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 154,90&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 168,84 (em até 3x sem juros)&quot;,&quot;tag&quot;:&quot;Margem Cheia&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=Bel%C3%ADssima%20%26%20Fit%20Franca%20Esta%C3%A7%C3%A3o%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Recomendação Curta (1 Linha) -->
+          <div class="mt-3 pt-2.5 border-t border-slate-800/80 text-xs text-slate-300 flex items-center gap-2">
+            <span class="text-emerald-400 font-bold shrink-0">💡 Sugestão:</span>
+            <span>Manter pote a R$ 129,90 à vista e refil a R$ 109,90.</span>
+          </div>
+        </article>
+      
+
+        <article class="bg-slate-900 border border-slate-800 rounded-2xl p-4 sm:p-5">
+          <!-- Cabeçalho Direto do Produto -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-800">
+            <h2 class="text-base sm:text-lg font-extrabold text-white">
+              Pré-Treino Évora PW / Horus 300g (Max Titanium / Darkness)
+            </h2>
+            <div class="flex items-center gap-2.5 text-xs font-mono shrink-0 bg-slate-950 px-3 py-1.5 rounded-xl border border-slate-800">
+              <span>Menor PIX: <strong class="text-emerald-400">R$ 89,90</strong></span>
+              <span class="text-slate-700">|</span>
+              <span>Média: <strong class="text-sky-400">R$ 109,90</strong></span>
+              <span class="text-slate-700">|</span>
+              <span>Maior: <strong class="text-rose-400">R$ 129,90</strong></span>
+            </div>
+          </div>
+
+          <!-- Tabela Enxuta com Valor PIX, Valor Cartão e Ficha da Oferta -->
+          <div class="overflow-x-auto mt-2">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="border-b border-slate-800 text-[11px] uppercase text-slate-400">
+                  <th class="py-2 px-3">Concorrente (Bairro)</th>
+                  <th class="py-2 px-3 hidden md:table-cell">Marca / Modelo</th>
+                  <th class="py-2 px-3 text-emerald-400">Valor PIX</th>
+                  <th class="py-2 px-3">Valor Cartão</th>
+                  <th class="py-2 px-3 text-right">Comprovante</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">Monster Suplementos Franca</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(Centro)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Évora PW 300g</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-emerald-400 font-extrabold whitespace-nowrap">
+                R$ 89,90
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 97,99
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 3x sem juros</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="Monster Suplementos Franca"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;Pré-Treino Évora PW / Horus 300g (Max Titanium / Darkness)&quot;,&quot;store&quot;:&quot;Monster Suplementos Franca&quot;,&quot;neighborhood&quot;:&quot;Centro&quot;,&quot;spec&quot;:&quot;Évora PW 300g&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 89,90&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 97,99 (em até 3x sem juros)&quot;,&quot;tag&quot;:&quot;Menor Preço (Isca)&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=Monster%20Suplementos%20Franca%20Centro%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">Bio Corpo Suplementos</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(Alonso y Alonso)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Horus 300g Max</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-100 font-semibold whitespace-nowrap">
+                R$ 109,90
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 119,79
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 3x sem juros</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="Bio Corpo Suplementos"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;Pré-Treino Évora PW / Horus 300g (Max Titanium / Darkness)&quot;,&quot;store&quot;:&quot;Bio Corpo Suplementos&quot;,&quot;neighborhood&quot;:&quot;Alonso y Alonso&quot;,&quot;spec&quot;:&quot;Horus 300g Max&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 109,90&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 119,79 (em até 3x sem juros)&quot;,&quot;tag&quot;:&quot;Média Franca&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=Bio%20Corpo%20Suplementos%20Alonso%20y%20Alonso%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+            <tr class="border-b border-slate-800/70 last:border-0 hover:bg-slate-800/30">
+              <td class="py-2.5 px-3">
+                <span class="font-semibold text-slate-100 text-xs sm:text-sm">Mundo Verde / Empório Fit</span>
+                <span class="block sm:inline text-[11px] text-slate-400 sm:ml-1">(São José)</span>
+              </td>
+              <td class="py-2.5 px-3 text-xs text-slate-300 hidden md:table-cell">Horus / Haze 300g</td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-rose-400 font-bold whitespace-nowrap">
+                R$ 129,90
+                <span class="block text-[10px] font-sans font-normal text-emerald-400/80">à vista PIX</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-xs sm:text-sm text-slate-300 whitespace-nowrap">
+                R$ 141,59
+                <span class="block text-[10px] font-sans font-normal text-slate-400">em até 3x sem juros</span>
+              </td>
+              <td class="py-2.5 px-3 text-right whitespace-nowrap">
+                <button type="button"
+                        data-competitor-link="Mundo Verde / Empório Fit"
+                        onclick="openOfferProofModal({&quot;productName&quot;:&quot;Pré-Treino Évora PW / Horus 300g (Max Titanium / Darkness)&quot;,&quot;store&quot;:&quot;Mundo Verde / Empório Fit&quot;,&quot;neighborhood&quot;:&quot;São José&quot;,&quot;spec&quot;:&quot;Horus / Haze 300g&quot;,&quot;pricePixFormatted&quot;:&quot;R$ 129,90&quot;,&quot;priceCardFormatted&quot;:&quot;R$ 141,59 (em até 3x sem juros)&quot;,&quot;tag&quot;:&quot;Margem Cheia&quot;,&quot;channel&quot;:&quot;Oferta Online Verificada (E-commerce Oficial com Retirada/Entrega em Franca)&quot;,&quot;auditDate&quot;:&quot;2026-11-25&quot;,&quot;verifyUrl&quot;:&quot;https://www.google.com/maps/search/?api=1&amp;query=Mundo%20Verde%20%2F%20Emp%C3%B3rio%20Fit%20S%C3%A3o%20Jos%C3%A9%20Franca%20SP&quot;,&quot;verifyLabel&quot;:&quot;🌐 Abrir Página Exata da Oferta Online ↗&quot;,&quot;verifyType&quot;:&quot;product_page&quot;})"
+                        class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-[11px] font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer">
+                  🔍 Ver Oferta
+                </button>
+              </td>
+            </tr>
+          
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Recomendação Curta (1 Linha) -->
+          <div class="mt-3 pt-2.5 border-t border-slate-800/80 text-xs text-slate-300 flex items-center gap-2">
+            <span class="text-emerald-400 font-bold shrink-0">💡 Sugestão:</span>
+            <span>Excelente margem: manter Horus em R$ 114,90 e Évora PW em R$ 99,90.</span>
+          </div>
+        </article>
+      
+    </div>
+
+    <!-- Box Direto de Envio da Lista do Lojista -->
+    <section id="solicitar-lista" class="mt-8 bg-slate-900 border-2 border-emerald-500/40 rounded-2xl p-5 sm:p-6">
+      <div class="pb-4 border-b border-slate-800">
+        <h2 class="text-lg sm:text-xl font-extrabold text-white">
+          📋 Quer cotar a SUA lista de produtos nos concorrentes de Franca?
+        </h2>
+        <p class="text-xs text-slate-300 mt-0.5">
+          Envie até 15 produtos da sua loja e nossos agentes atualizam esta página com os preços no PIX e no Cartão dos concorrentes.
+        </p>
+      </div>
+
+      <!-- Opções Simples: R$ 59 vs R$ 129 -->
+      <div class="grid sm:grid-cols-2 gap-3 mt-4">
+        <label class="cursor-pointer bg-slate-950 border border-emerald-500 rounded-xl p-3 flex items-center justify-between">
+          <div>
+            <span class="text-xs font-bold text-emerald-400 block">⚡ Pacote Avulso (Até 15 itens)</span>
+            <strong class="text-lg font-extrabold text-white">R$ 59,00</strong>
+            <span class="text-[11px] text-slate-400"> (pagamento único PIX)</span>
+          </div>
+          <input type="radio" name="radar-plan" value="Plano Radar Avulso (R$ 59,00 no PIX - Até 15 Produtos)" checked class="accent-emerald-500 w-4 h-4" />
+        </label>
+
+        <label class="cursor-pointer bg-slate-950 border border-slate-800 hover:border-sky-500/50 rounded-xl p-3 flex items-center justify-between">
+          <div>
+            <span class="text-xs font-bold text-sky-400 block">🔄 Monitoramento Mensal (Semanal)</span>
+            <strong class="text-lg font-extrabold text-white">R$ 129,00</strong>
+            <span class="text-[11px] text-slate-400"> /mês</span>
+          </div>
+          <input type="radio" name="radar-plan" value="Plano Radar Recorrente (R$ 129,00/mês - Atualização Semanal)" class="accent-sky-500 w-4 h-4" />
+        </label>
+      </div>
+
+      <div class="mt-4">
+        <label for="custom-product-list" class="block text-xs font-bold text-slate-300 mb-1.5">
+          Sua lista de produtos para cotar (1 por linha):
+        </label>
+        <textarea id="custom-product-list" rows="4"
+                  class="w-full bg-slate-950 border border-slate-700 focus:border-emerald-500 rounded-xl p-3 text-xs sm:text-sm text-emerald-300 font-mono focus:outline-none">- Creatina Monohidratada 100% Pura 300g (Max Titanium / Integralmédica)
+- 100% Whey Protein Concentrado 900g Pote (Max Titanium / Probiótica)
+- Pré-Treino Évora PW / Horus 300g (Max Titanium / Darkness)</textarea>
+      </div>
+
+      <button type="button" onclick="sendProductListToWhatsapp()"
+              class="mt-4 w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-sm transition-all shadow">
+        📲 Enviar Lista para Cotação no WhatsApp
+      </button>
+    </section>
+  </main>
+
+  <!-- Modal Instantâneo de Comprovante da Oferta (Evita que o lojista tenha que procurar no site do concorrente) -->
+  <div id="offer-proof-modal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-sm hidden items-center justify-center z-50 p-4" onclick="if(event.target===this)closeOfferProofModal()">
+    <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-md w-full p-5 space-y-4 shadow-2xl">
+      <div class="flex items-start justify-between gap-2 border-b border-slate-800 pb-3">
+        <div>
+          <span class="text-[11px] font-extrabold uppercase text-emerald-400">✓ Ficha de Cotação Verificada pelo Agente</span>
+          <h3 id="proof-store-name" class="text-base sm:text-lg font-extrabold text-white mt-0.5"></h3>
+          <p id="proof-neighborhood" class="text-xs text-slate-400"></p>
+        </div>
+        <button type="button" onclick="closeOfferProofModal()" class="text-slate-400 hover:text-white text-xs font-bold px-2 py-1 rounded bg-slate-800">✕</button>
+      </div>
+
+      <div class="bg-slate-950 border border-slate-800 rounded-xl p-3.5 space-y-2.5 text-xs">
+        <div>
+          <span class="text-slate-400 block text-[11px]">Produto / Especificação Exata Cotada:</span>
+          <strong id="proof-spec" class="text-white text-sm font-bold block mt-0.5"></strong>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-800">
+          <div class="bg-emerald-950/30 border border-emerald-500/30 rounded-lg p-2.5">
+            <span class="text-[10px] uppercase font-bold text-emerald-400 block">Valor à Vista (PIX)</span>
+            <strong id="proof-pix" class="font-mono text-base font-extrabold text-emerald-400"></strong>
+          </div>
+          <div class="bg-slate-900 border border-slate-700 rounded-lg p-2.5">
+            <span class="text-[10px] uppercase font-bold text-slate-400 block">Valor no Cartão</span>
+            <strong id="proof-card" class="font-mono text-sm font-bold text-slate-200"></strong>
+          </div>
+        </div>
+
+        <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px] text-slate-400">
+          <span id="proof-channel"></span>
+          <span id="proof-date" class="font-mono"></span>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <a id="proof-external-link"
+           href="#"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="w-full py-2.5 px-4 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-extrabold text-xs text-center transition-all">
+          🌐 Abrir Fonte Verificada ↗
+        </a>
+        <button type="button"
+                onclick="closeOfferProofModal()"
+                class="w-full py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs">
+          Voltar para a Tabela
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const OPERATOR_PHONE = "5516991609080";
+    const STORE_NAME = "Franca Suplementos \u0026 Nutrição Esportiva";
+    const STORE_NICHE = "Suplementos \u0026 Cosméticos";
+
+    function openOfferProofModal(data) {
+      document.getElementById('proof-store-name').textContent = data.store;
+      document.getElementById('proof-neighborhood').textContent = '📍 ' + data.neighborhood + ' • Posicionamento: ' + data.tag;
+      document.getElementById('proof-spec').textContent = data.productName + ' — ' + data.spec;
+      document.getElementById('proof-pix').textContent = data.pricePixFormatted;
+      document.getElementById('proof-card').textContent = data.priceCardFormatted;
+      document.getElementById('proof-channel').textContent = '📡 ' + data.channel;
+      document.getElementById('proof-date').textContent = 'Coleta: ' + data.auditDate;
+      const extLink = document.getElementById('proof-external-link');
+      extLink.href = data.verifyUrl;
+      extLink.textContent = data.verifyLabel || '🌐 Abrir Fonte Verificada ↗';
+      extLink.className = data.verifyType === 'product_page'
+        ? 'w-full py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs text-center transition-all'
+        : 'w-full py-2.5 px-4 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-extrabold text-xs text-center transition-all';
+
+      const modal = document.getElementById('offer-proof-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeOfferProofModal() {
+      const modal = document.getElementById('offer-proof-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function sendProductListToWhatsapp() {
+      const listEl = document.getElementById('custom-product-list');
+      const selectedPlanEl = document.querySelector('input[name="radar-plan"]:checked');
+      const planText = selectedPlanEl ? selectedPlanEl.value : 'Plano Radar Avulso (R$ 59,00)';
+      const productsText = listEl && listEl.value.trim() ? listEl.value.trim() : '(Vou enviar minha lista de produtos)';
+
+      const msg =
+        'Olá! Vi o Radar de Preços da *' + STORE_NAME + '* (' + STORE_NICHE + ' - Franca/SP) e quero cotar minha lista de produtos.\n\n' +
+        '*Plano:* ' + planText + '\n\n' +
+        '*Lista de Produtos:*\n' + productsText;
+
+      const url = 'https://wa.me/' + OPERATOR_PHONE + '?text=' + encodeURIComponent(msg);
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
